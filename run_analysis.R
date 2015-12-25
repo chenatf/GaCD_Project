@@ -52,12 +52,12 @@ data_set<-select(data_set,-activity_labels)
 names(data_set)<-sub("()","",names(data_set),fixed = TRUE)
 names(data_set)<-gsub("-mean","",names(data_set),fixed = TRUE)
 names(data_set)<-gsub("-","_",names(data_set),fixed = TRUE)
-data_set<-gather(data_set,features,mean,tBodyAcc_X:fBodyBodyGyroJerkMag)
+data_set<-gather(data_set,signals,mean,tBodyAcc_X:fBodyBodyGyroJerkMag)
 names(data_set)<-gsub("_std","",names(data_set),fixed = TRUE)
-data_set<-gather(data_set,features,std,tBodyAcc_X:fBodyBodyGyroJerkMag)
+data_set<-gather(data_set,signals,std,tBodyAcc_X:fBodyBodyGyroJerkMag)
 data_set[,5]<-NULL
 
-data_set_groups<-group_by(data_set,subject,activities,features)
+data_set_groups<-group_by(data_set,subject,activities,signals)
 data_set_tidy<-summarise(data_set_groups,mean=mean(mean),std=mean(std))
 
 write.table(data_set_tidy,"./data_set_tidy.txt",row.names = FALSE)
