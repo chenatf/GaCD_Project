@@ -2,7 +2,7 @@
 # Load the tidyr library.
 
 #Read the dataset and stored in the data frame format.
- # features: List of all features.
+## features: List of all features.
  ## activity_labels: Links the class labels with their activity name.
  ## X_train: Training set.
  ## y_train: Training labels.
