@@ -1,4 +1,4 @@
-## Load the dplyr library.
+### Load the dplyr library.
 ## Load the tidyr library.
 #Read the dataset and stored in the data frame format.
 ## features: List of all features.
@@ -12,16 +12,16 @@
 #The data into a suitable for "dplyr" library data frame format.
 #Naming the columns of data.
 #Remove duplicate column.
-##Transfer test set data to remove duplicate rows, then transpose.(removing the test set data duplicate column)
-##Transfer training set data to remove duplicate rows, then transpose.
+##Transfer X_test to remove duplicate rows, then transpose.(removing the X_test duplicate column)
+##Transfer X_train to remove duplicate rows, then transpose.
 #Extracts only the measurements on the mean and standard deviation for each measurement. 
 ##Select test set column containing “mean()” into X_test_std.
 ##Select test set column containing “std()” into X_test_std.
-##Combined, subject_test, y_test, X_test_mean X_test_std to as test_set according to column.
+##Combined subject_test, y_test, X_test_mean X_test_std to as test_set according to column.
 ##Delete X_test_mean and X_test_std.
 ##Select train set column containing “mean()” into X_train_std.
 ##Select train set column containing “std()” into X_train_std.
-##Combined, subject_train, y_train, X_train_mean X_train_std to as train_set according to column.
+##Combined subject_train, y_train, X_train_mean X_train_std to as train_set according to column.
 ##Delete X_train_mean and X_train_std.
 #Merges the training and the test sets to create one data set.
 ##Merging test_set and train_set to create one data set called data_set in rows.
@@ -34,3 +34,4 @@
 ##Delete "-mean" in the data_set column names.
 ##Replace "-" to "_" in the data_set column names.
 ##The data_set from tBodyAcc_X to fBodyBodyGyroJerkMag column,the column names as the values of the features,the values as the values of the mean.
+
