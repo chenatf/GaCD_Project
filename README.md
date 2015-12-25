@@ -33,11 +33,11 @@
 ####Delete "()" in the data_set column names.
 ####Delete "-mean" in the data_set column names.
 ####Replace "-" to "_" in the data_set column names.
-####The data_set from tBodyAcc_X to fBodyBodyGyroJerkMag column,the column names as the values of the features,the values as the values of the mean,duplicating all other columns as needed.
+####The data_set from tBodyAcc_X to fBodyBodyGyroJerkMag column,the column names as the values of the signals,the values as the values of the mean,duplicating all other columns as needed.
 ####Delete "_std" in the data_set column names.
-####The data_set from tBodyAcc_X to fBodyBodyGyroJerkMag column,the column names as the values of the features,the values as the values of the std,duplicating all other columns as needed.
-####Delete the fifth column of data_set.(remove duplicate the features)
+####The data_set from tBodyAcc_X to fBodyBodyGyroJerkMag column,the column names as the values of the signals,the values as the values of the std,duplicating all other columns as needed.
+####Delete the fifth column of data_set.(remove duplicate the signals)
 ##7.creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-####Group data_set by the Column of the subject, activities and the features,the results in data_set_groups.
+####Group data_set by the Column of the subject, activities and the signals,the results in data_set_groups.
 ####Each group for the average of the mean and STD, and deposited in the data_set_tidy.
 ##8.The data_set_tidy output to a text file called data_set_tidy.txt.
